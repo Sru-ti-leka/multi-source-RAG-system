@@ -1,0 +1,261 @@
+{
+  "summary": {
+    "n_queries": 10,
+    "hit@5_pre": 0.8,
+    "hit@5_post": 1.0,
+    "hit@1_pre": 0.7,
+    "hit@1_post": 0.4,
+    "weights": {
+      "docs": 1.2,
+      "blogs": 1.0,
+      "forums": 0.8
+    },
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "notes": "Gold labels are file-level expectations for this synthetic dataset."
+  },
+  "details": [
+    {
+      "query": "What is the max attachment size?",
+      "gold": [
+        "file_attachments.md"
+      ],
+      "pre_top5": [
+        "attachment_best_practices.md",
+        "F001",
+        "file_attachments.md",
+        "F001",
+        "F001"
+      ],
+      "post_top5": [
+        "F001",
+        "F001",
+        "F001",
+        "file_attachments.md",
+        "attachment_best_practices.md"
+      ],
+      "pre_hit@5": true,
+      "post_hit@5": true,
+      "pre_hit@1": false,
+      "post_hit@1": false
+    },
+    {
+      "query": "What file types can I attach to a task?",
+      "gold": [
+        "file_attachments.md"
+      ],
+      "pre_top5": [
+        "file_attachments.md",
+        "exporting_tasks.md",
+        "getting_started.md",
+        "attachment_best_practices.md",
+        "troubleshooting.md"
+      ],
+      "post_top5": [
+        "file_attachments.md",
+        "getting_started.md",
+        "F001",
+        "exporting_tasks.md",
+        "troubleshooting.md"
+      ],
+      "pre_hit@5": true,
+      "post_hit@5": true,
+      "pre_hit@1": true,
+      "post_hit@1": true
+    },
+    {
+      "query": "How long do API keys last before expiring?",
+      "gold": [
+        "authentication.md"
+      ],
+      "pre_top5": [
+        "authentication.md",
+        "api_automation_basics.md",
+        "F002",
+        "api_reference.md",
+        "F002"
+      ],
+      "post_top5": [
+        "api_automation_basics.md",
+        "authentication.md",
+        "F002",
+        "F002",
+        "F002"
+      ],
+      "pre_hit@5": true,
+      "post_hit@5": true,
+      "pre_hit@1": true,
+      "post_hit@1": false
+    },
+    {
+      "query": "What is the API rate limit per hour?",
+      "gold": [
+        "api_reference.md"
+      ],
+      "pre_top5": [
+        "api_reference.md",
+        "F003",
+        "troubleshooting.md",
+        "handling_rate_limits.md",
+        "getting_started.md"
+      ],
+      "post_top5": [
+        "api_reference.md",
+        "getting_started.md",
+        "F003",
+        "troubleshooting.md",
+        "F003"
+      ],
+      "pre_hit@5": true,
+      "post_hit@5": true,
+      "pre_hit@1": true,
+      "post_hit@1": true
+    },
+    {
+      "query": "Why am I seeing ERR002?",
+      "gold": [
+        "file_attachments.md"
+      ],
+      "pre_top5": [
+        "troubleshooting.md",
+        "handling_rate_limits.md",
+        "api_reference.md",
+        "project_management.md",
+        "authentication.md"
+      ],
+      "post_top5": [
+        "handling_rate_limits.md",
+        "troubleshooting.md",
+        "authentication.md",
+        "project_management.md",
+        "file_attachments.md"
+      ],
+      "pre_hit@5": false,
+      "post_hit@5": true,
+      "pre_hit@1": false,
+      "post_hit@1": false
+    },
+    {
+      "query": "Why am I seeing ERR001?",
+      "gold": [
+        "authentication.md",
+        "troubleshooting.md"
+      ],
+      "pre_top5": [
+        "troubleshooting.md",
+        "handling_rate_limits.md",
+        "api_reference.md",
+        "project_management.md",
+        "authentication.md"
+      ],
+      "post_top5": [
+        "handling_rate_limits.md",
+        "troubleshooting.md",
+        "authentication.md",
+        "project_management.md",
+        "file_attachments.md"
+      ],
+      "pre_hit@5": true,
+      "post_hit@5": true,
+      "pre_hit@1": true,
+      "post_hit@1": false
+    },
+    {
+      "query": "Does TaskFlow Lite support PDF export?",
+      "gold": [
+        "exporting_tasks.md",
+        "export.md"
+      ],
+      "pre_top5": [
+        "exporting_tasks.md",
+        "getting_started.md",
+        "export.md",
+        "file_attachments.md",
+        "installation.md"
+      ],
+      "post_top5": [
+        "exporting_tasks.md",
+        "export.md",
+        "getting_started.md",
+        "file_attachments.md",
+        "project_management.md"
+      ],
+      "pre_hit@5": true,
+      "post_hit@5": true,
+      "pre_hit@1": true,
+      "post_hit@1": true
+    },
+    {
+      "query": "What happens if I exceed the task limit in a project?",
+      "gold": [
+        "project_management.md"
+      ],
+      "pre_top5": [
+        "project_management.md",
+        "getting_started.md",
+        "troubleshooting.md",
+        "api_reference.md",
+        "F003"
+      ],
+      "post_top5": [
+        "troubleshooting.md",
+        "project_management.md",
+        "getting_started.md",
+        "api_reference.md",
+        "F003"
+      ],
+      "pre_hit@5": true,
+      "post_hit@5": true,
+      "pre_hit@1": true,
+      "post_hit@1": false
+    },
+    {
+      "query": "How do I fix ERR003 rate limit exceeded?",
+      "gold": [
+        "troubleshooting.md",
+        "api_reference.md"
+      ],
+      "pre_top5": [
+        "api_reference.md",
+        "troubleshooting.md",
+        "handling_rate_limits.md",
+        "project_management.md",
+        "file_attachments.md"
+      ],
+      "post_top5": [
+        "troubleshooting.md",
+        "api_reference.md",
+        "handling_rate_limits.md",
+        "project_management.md",
+        "file_attachments.md"
+      ],
+      "pre_hit@5": true,
+      "post_hit@5": true,
+      "pre_hit@1": true,
+      "post_hit@1": true
+    },
+    {
+      "query": "Can I attach a DOCX file to a task?",
+      "gold": [
+        "file_attachments.md"
+      ],
+      "pre_top5": [
+        "exporting_tasks.md",
+        "getting_started.md",
+        "troubleshooting.md",
+        "project_management.md",
+        "export.md"
+      ],
+      "post_top5": [
+        "getting_started.md",
+        "F001",
+        "troubleshooting.md",
+        "file_attachments.md",
+        "exporting_tasks.md"
+      ],
+      "pre_hit@5": false,
+      "post_hit@5": true,
+      "pre_hit@1": false,
+      "post_hit@1": false
+    }
+  ]
+}
