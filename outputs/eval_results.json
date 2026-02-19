@@ -1,0 +1,866 @@
+[
+  {
+    "query": "What is the max attachment size?",
+    "answer": "Answer (based on DOCS):\n# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large\n\nNote on conflicting information:\nI found conflicting numeric values across sources. Policy used: DOCS > BLOGS > FORUMS.",
+    "preferred_source": "docs",
+    "contradictions": {
+      "attachment_mb": [
+        {
+          "claim": "25mb",
+          "mentions": [
+            {
+              "source": "forums",
+              "chunk_id": "forums::F001::r1::0",
+              "source_id": "F001",
+              "text_preview": "TITLE: What is the max attachment size? | REPLY by user2 (upvotes=8): Pretty sure it’s 25MB."
+            },
+            {
+              "source": "docs",
+              "chunk_id": "docs::file_attachments.md::0",
+              "source_id": "file_attachments.md",
+              "text_preview": "# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large"
+            }
+          ]
+        },
+        {
+          "claim": "30mb",
+          "mentions": [
+            {
+              "source": "blogs",
+              "chunk_id": "blogs::attachment_best_practices.md::0",
+              "source_id": "attachment_best_practices.md",
+              "text_preview": "# Attachment Best Practices Earlier releases allowed attachments up to 30MB. Always verify current documentation for exact limits."
+            }
+          ]
+        },
+        {
+          "claim": "40mb",
+          "mentions": [
+            {
+              "source": "forums",
+              "chunk_id": "forums::F001::q::0",
+              "source_id": "F001",
+              "text_preview": "TITLE: What is the max attachment size? | QUESTION: I tried uploading a 40MB file and it failed."
+            }
+          ]
+        },
+        {
+          "claim": "50mb",
+          "mentions": [
+            {
+              "source": "forums",
+              "chunk_id": "forums::F001::r0::0",
+              "source_id": "F001",
+              "text_preview": "TITLE: What is the max attachment size? | REPLY by user1 (upvotes=3): I think it’s 50MB."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence_top5": [
+      {
+        "source": "forums",
+        "source_id": "F001",
+        "chunk_id": "forums::F001::r1::0",
+        "weighted_score": 0.5464722633361817,
+        "rerank_score": 8.150882720947266,
+        "text_preview": "TITLE: What is the max attachment size? | REPLY by user2 (upvotes=8): Pretty sure it’s 25MB."
+      },
+      {
+        "source": "forums",
+        "source_id": "F001",
+        "chunk_id": "forums::F001::r0::0",
+        "weighted_score": 0.5560134887695313,
+        "rerank_score": 7.956221103668213,
+        "text_preview": "TITLE: What is the max attachment size? | REPLY by user1 (upvotes=3): I think it’s 50MB."
+      },
+      {
+        "source": "forums",
+        "source_id": "F001",
+        "chunk_id": "forums::F001::q::0",
+        "weighted_score": 0.5356976509094239,
+        "rerank_score": 5.946503639221191,
+        "text_preview": "TITLE: What is the max attachment size? | QUESTION: I tried uploading a 40MB file and it failed."
+      },
+      {
+        "source": "docs",
+        "source_id": "file_attachments.md",
+        "chunk_id": "docs::file_attachments.md::0",
+        "weighted_score": 0.554077935218811,
+        "rerank_score": 4.519356727600098,
+        "text_preview": "# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large"
+      },
+      {
+        "source": "blogs",
+        "source_id": "attachment_best_practices.md",
+        "chunk_id": "blogs::attachment_best_practices.md::0",
+        "weighted_score": 0.6178687810897827,
+        "rerank_score": -1.8274630308151245,
+        "text_preview": "# Attachment Best Practices Earlier releases allowed attachments up to 30MB. Always verify current documentation for exact limits."
+      }
+    ]
+  },
+  {
+    "query": "What file types can I attach to a task?",
+    "answer": "Answer (based on DOCS):\n# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large\n\nNote on conflicting information:\nI found conflicting numeric values across sources. Policy used: DOCS > BLOGS > FORUMS.",
+    "preferred_source": "docs",
+    "contradictions": {
+      "attachment_mb": [
+        {
+          "claim": "25mb",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::file_attachments.md::0",
+              "source_id": "file_attachments.md",
+              "text_preview": "# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large"
+            },
+            {
+              "source": "docs",
+              "chunk_id": "docs::getting_started.md::0",
+              "source_id": "getting_started.md",
+              "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks pe"
+            },
+            {
+              "source": "docs",
+              "chunk_id": "docs::troubleshooting.md::0",
+              "source_id": "troubleshooting.md",
+              "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/ho"
+            }
+          ]
+        },
+        {
+          "claim": "40mb",
+          "mentions": [
+            {
+              "source": "forums",
+              "chunk_id": "forums::F001::q::0",
+              "source_id": "F001",
+              "text_preview": "TITLE: What is the max attachment size? | QUESTION: I tried uploading a 40MB file and it failed."
+            }
+          ]
+        }
+      ],
+      "rate_limit": [
+        {
+          "claim": "300/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::troubleshooting.md::0",
+              "source_id": "troubleshooting.md",
+              "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/ho"
+            }
+          ]
+        },
+        {
+          "claim": "300requests/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::getting_started.md::0",
+              "source_id": "getting_started.md",
+              "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks pe"
+            }
+          ]
+        }
+      ]
+    },
+    "evidence_top5": [
+      {
+        "source": "docs",
+        "source_id": "file_attachments.md",
+        "chunk_id": "docs::file_attachments.md::0",
+        "weighted_score": 0.42516331672668456,
+        "rerank_score": 1.8904920816421509,
+        "text_preview": "# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large"
+      },
+      {
+        "source": "docs",
+        "source_id": "getting_started.md",
+        "chunk_id": "docs::getting_started.md::0",
+        "weighted_score": 0.3939127206802368,
+        "rerank_score": -4.405017852783203,
+        "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks per project: 500 - Attachments: up to 25MB"
+      },
+      {
+        "source": "forums",
+        "source_id": "F001",
+        "chunk_id": "forums::F001::q::0",
+        "weighted_score": 0.311535120010376,
+        "rerank_score": -5.069755554199219,
+        "text_preview": "TITLE: What is the max attachment size? | QUESTION: I tried uploading a 40MB file and it failed."
+      },
+      {
+        "source": "blogs",
+        "source_id": "exporting_tasks.md",
+        "chunk_id": "blogs::exporting_tasks.md::0",
+        "weighted_score": 0.41091132164001465,
+        "rerank_score": -5.741542339324951,
+        "text_preview": "# Exporting Tasks TaskFlow Lite supports exporting to CSV and JSON. Some users request PDF export, but it is not officially supported."
+      },
+      {
+        "source": "docs",
+        "source_id": "troubleshooting.md",
+        "chunk_id": "docs::troubleshooting.md::0",
+        "weighted_score": 0.3807321310043335,
+        "rerank_score": -6.523235321044922,
+        "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached ("
+      }
+    ]
+  },
+  {
+    "query": "How long do API keys last before expiring?",
+    "answer": "Answer (based on DOCS):\n# Authentication (v2.3) API keys expire after 60 days. Error Codes: - ERR001: Invalid API key\n\nNote on conflicting information:\nI found conflicting numeric values across sources. Policy used: DOCS > BLOGS > FORUMS.",
+    "preferred_source": "docs",
+    "contradictions": {
+      "api_key_days": [
+        {
+          "claim": "30days",
+          "mentions": [
+            {
+              "source": "forums",
+              "chunk_id": "forums::F002::r1::0",
+              "source_id": "F002",
+              "text_preview": "TITLE: API key expired after 30 days? | REPLY by techAmy (upvotes=10): Docs say 60 days."
+            },
+            {
+              "source": "forums",
+              "chunk_id": "forums::F002::r0::0",
+              "source_id": "F002",
+              "text_preview": "TITLE: API key expired after 30 days? | REPLY by devFan (upvotes=2): Keys never expire."
+            },
+            {
+              "source": "forums",
+              "chunk_id": "forums::F002::q::0",
+              "source_id": "F002",
+              "text_preview": "TITLE: API key expired after 30 days? | QUESTION: Mine stopped working after a month."
+            }
+          ]
+        },
+        {
+          "claim": "60days",
+          "mentions": [
+            {
+              "source": "blogs",
+              "chunk_id": "blogs::api_automation_basics.md::0",
+              "source_id": "api_automation_basics.md",
+              "text_preview": "# API Automation Basics Generate an API key from Settings. Remember that API keys expire after 60 days."
+            },
+            {
+              "source": "docs",
+              "chunk_id": "docs::authentication.md::0",
+              "source_id": "authentication.md",
+              "text_preview": "# Authentication (v2.3) API keys expire after 60 days. Error Codes: - ERR001: Invalid API key"
+            },
+            {
+              "source": "forums",
+              "chunk_id": "forums::F002::r1::0",
+              "source_id": "F002",
+              "text_preview": "TITLE: API key expired after 30 days? | REPLY by techAmy (upvotes=10): Docs say 60 days."
+            }
+          ]
+        }
+      ]
+    },
+    "evidence_top5": [
+      {
+        "source": "blogs",
+        "source_id": "api_automation_basics.md",
+        "chunk_id": "blogs::api_automation_basics.md::0",
+        "weighted_score": 0.6797134280204773,
+        "rerank_score": 8.242603302001953,
+        "text_preview": "# API Automation Basics Generate an API key from Settings. Remember that API keys expire after 60 days."
+      },
+      {
+        "source": "docs",
+        "source_id": "authentication.md",
+        "chunk_id": "docs::authentication.md::0",
+        "weighted_score": 0.8534887790679931,
+        "rerank_score": 8.118513107299805,
+        "text_preview": "# Authentication (v2.3) API keys expire after 60 days. Error Codes: - ERR001: Invalid API key"
+      },
+      {
+        "source": "forums",
+        "source_id": "F002",
+        "chunk_id": "forums::F002::r1::0",
+        "weighted_score": 0.607406759262085,
+        "rerank_score": 8.055244445800781,
+        "text_preview": "TITLE: API key expired after 30 days? | REPLY by techAmy (upvotes=10): Docs say 60 days."
+      },
+      {
+        "source": "forums",
+        "source_id": "F002",
+        "chunk_id": "forums::F002::r0::0",
+        "weighted_score": 0.568648099899292,
+        "rerank_score": 8.02827262878418,
+        "text_preview": "TITLE: API key expired after 30 days? | REPLY by devFan (upvotes=2): Keys never expire."
+      },
+      {
+        "source": "forums",
+        "source_id": "F002",
+        "chunk_id": "forums::F002::q::0",
+        "weighted_score": 0.5634000778198243,
+        "rerank_score": 7.301322937011719,
+        "text_preview": "TITLE: API key expired after 30 days? | QUESTION: Mine stopped working after a month."
+      }
+    ]
+  },
+  {
+    "query": "What is the API rate limit per hour?",
+    "answer": "Answer (based on DOCS):\n# API Reference (v2.3) Rate limit: 300 requests/hour per API key. Error: - ERR003: Rate limit exceeded\n\nNote on conflicting information:\nI found conflicting numeric values across sources. Policy used: DOCS > BLOGS > FORUMS.",
+    "preferred_source": "docs",
+    "contradictions": {
+      "rate_limit": [
+        {
+          "claim": "300/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::troubleshooting.md::0",
+              "source_id": "troubleshooting.md",
+              "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/ho"
+            },
+            {
+              "source": "forums",
+              "chunk_id": "forums::F003::r1::0",
+              "source_id": "F003",
+              "text_preview": "TITLE: Rate limit question | REPLY by beta (upvotes=9): I believe it's 300/hour now."
+            }
+          ]
+        },
+        {
+          "claim": "300requests/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::api_reference.md::0",
+              "source_id": "api_reference.md",
+              "text_preview": "# API Reference (v2.3) Rate limit: 300 requests/hour per API key. Error: - ERR003: Rate limit exceeded"
+            },
+            {
+              "source": "docs",
+              "chunk_id": "docs::getting_started.md::0",
+              "source_id": "getting_started.md",
+              "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks pe"
+            }
+          ]
+        }
+      ]
+    },
+    "evidence_top5": [
+      {
+        "source": "docs",
+        "source_id": "api_reference.md",
+        "chunk_id": "docs::api_reference.md::0",
+        "weighted_score": 0.8334526062011719,
+        "rerank_score": 7.338756561279297,
+        "text_preview": "# API Reference (v2.3) Rate limit: 300 requests/hour per API key. Error: - ERR003: Rate limit exceeded"
+      },
+      {
+        "source": "docs",
+        "source_id": "getting_started.md",
+        "chunk_id": "docs::getting_started.md::0",
+        "weighted_score": 0.44519065618515014,
+        "rerank_score": 5.019800186157227,
+        "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks per project: 500 - Attachments: up to 25MB"
+      },
+      {
+        "source": "forums",
+        "source_id": "F003",
+        "chunk_id": "forums::F003::q::0",
+        "weighted_score": 0.7269874095916748,
+        "rerank_score": 4.288258075714111,
+        "text_preview": "TITLE: Rate limit question | QUESTION: What is the hourly API rate limit?"
+      },
+      {
+        "source": "docs",
+        "source_id": "troubleshooting.md",
+        "chunk_id": "docs::troubleshooting.md::0",
+        "weighted_score": 0.510650897026062,
+        "rerank_score": 3.6907849311828613,
+        "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached ("
+      },
+      {
+        "source": "forums",
+        "source_id": "F003",
+        "chunk_id": "forums::F003::r1::0",
+        "weighted_score": 0.42565603256225587,
+        "rerank_score": 1.0131418704986572,
+        "text_preview": "TITLE: Rate limit question | REPLY by beta (upvotes=9): I believe it's 300/hour now."
+      }
+    ]
+  },
+  {
+    "query": "Why am I seeing ERR002?",
+    "answer": "Answer (based on DOCS):\n# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached (500 tasks)\n\nNote on conflicting information:\nI found conflicting numeric values across sources. Policy used: DOCS > BLOGS > FORUMS.",
+    "preferred_source": "docs",
+    "contradictions": {
+      "rate_limit": [
+        {
+          "claim": "200requests/hour",
+          "mentions": [
+            {
+              "source": "blogs",
+              "chunk_id": "blogs::handling_rate_limits.md::0",
+              "source_id": "handling_rate_limits.md",
+              "text_preview": "# Handling Rate Limits Older versions had limits around 200 requests/hour. Newer versions increased reliability and improved limits. If you see ERR003, reduce r"
+            }
+          ]
+        },
+        {
+          "claim": "300/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::troubleshooting.md::0",
+              "source_id": "troubleshooting.md",
+              "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/ho"
+            }
+          ]
+        }
+      ]
+    },
+    "evidence_top5": [
+      {
+        "source": "blogs",
+        "source_id": "handling_rate_limits.md",
+        "chunk_id": "blogs::handling_rate_limits.md::0",
+        "weighted_score": 0.3992941379547119,
+        "rerank_score": 0.5372861623764038,
+        "text_preview": "# Handling Rate Limits Older versions had limits around 200 requests/hour. Newer versions increased reliability and improved limits. If you see ERR003, reduce request frequency."
+      },
+      {
+        "source": "docs",
+        "source_id": "troubleshooting.md",
+        "chunk_id": "docs::troubleshooting.md::0",
+        "weighted_score": 0.4321598410606384,
+        "rerank_score": -0.38233888149261475,
+        "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached ("
+      },
+      {
+        "source": "docs",
+        "source_id": "authentication.md",
+        "chunk_id": "docs::authentication.md::0",
+        "weighted_score": 0.21868740320205687,
+        "rerank_score": -3.369258403778076,
+        "text_preview": "# Authentication (v2.3) API keys expire after 60 days. Error Codes: - ERR001: Invalid API key"
+      },
+      {
+        "source": "docs",
+        "source_id": "project_management.md",
+        "chunk_id": "docs::project_management.md::0",
+        "weighted_score": 0.3108870506286621,
+        "rerank_score": -3.6254019737243652,
+        "text_preview": "# Projects (v2.3) Each project supports up to 500 tasks. Error: - ERR005: Project task limit reached"
+      },
+      {
+        "source": "docs",
+        "source_id": "file_attachments.md",
+        "chunk_id": "docs::file_attachments.md::0",
+        "weighted_score": 0.20066982507705688,
+        "rerank_score": -4.097874641418457,
+        "text_preview": "# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large"
+      }
+    ]
+  },
+  {
+    "query": "Why am I seeing ERR001?",
+    "answer": "Answer (based on DOCS):\n# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached (500 tasks)\n\nNote on conflicting information:\nI found conflicting numeric values across sources. Policy used: DOCS > BLOGS > FORUMS.",
+    "preferred_source": "docs",
+    "contradictions": {
+      "rate_limit": [
+        {
+          "claim": "200requests/hour",
+          "mentions": [
+            {
+              "source": "blogs",
+              "chunk_id": "blogs::handling_rate_limits.md::0",
+              "source_id": "handling_rate_limits.md",
+              "text_preview": "# Handling Rate Limits Older versions had limits around 200 requests/hour. Newer versions increased reliability and improved limits. If you see ERR003, reduce r"
+            }
+          ]
+        },
+        {
+          "claim": "300/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::troubleshooting.md::0",
+              "source_id": "troubleshooting.md",
+              "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/ho"
+            }
+          ]
+        }
+      ]
+    },
+    "evidence_top5": [
+      {
+        "source": "blogs",
+        "source_id": "handling_rate_limits.md",
+        "chunk_id": "blogs::handling_rate_limits.md::0",
+        "weighted_score": 0.4097203314304352,
+        "rerank_score": 0.1673608273267746,
+        "text_preview": "# Handling Rate Limits Older versions had limits around 200 requests/hour. Newer versions increased reliability and improved limits. If you see ERR003, reduce request frequency."
+      },
+      {
+        "source": "docs",
+        "source_id": "troubleshooting.md",
+        "chunk_id": "docs::troubleshooting.md::0",
+        "weighted_score": 0.44040398597717284,
+        "rerank_score": -0.3283408284187317,
+        "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached ("
+      },
+      {
+        "source": "docs",
+        "source_id": "authentication.md",
+        "chunk_id": "docs::authentication.md::0",
+        "weighted_score": 0.2089977264404297,
+        "rerank_score": -2.9263863563537598,
+        "text_preview": "# Authentication (v2.3) API keys expire after 60 days. Error Codes: - ERR001: Invalid API key"
+      },
+      {
+        "source": "docs",
+        "source_id": "project_management.md",
+        "chunk_id": "docs::project_management.md::0",
+        "weighted_score": 0.3031380414962768,
+        "rerank_score": -4.687243461608887,
+        "text_preview": "# Projects (v2.3) Each project supports up to 500 tasks. Error: - ERR005: Project task limit reached"
+      },
+      {
+        "source": "docs",
+        "source_id": "file_attachments.md",
+        "chunk_id": "docs::file_attachments.md::0",
+        "weighted_score": 0.1601797342300415,
+        "rerank_score": -5.882574081420898,
+        "text_preview": "# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large"
+      }
+    ]
+  },
+  {
+    "query": "Does TaskFlow Lite support PDF export?",
+    "answer": "Answer (based on DOCS):\n# Exporting Tasks (v2.3) Supported export formats: - CSV - JSON Error: - ERR004: Export failed",
+    "preferred_source": "docs",
+    "contradictions": {},
+    "evidence_top5": [
+      {
+        "source": "blogs",
+        "source_id": "exporting_tasks.md",
+        "chunk_id": "blogs::exporting_tasks.md::0",
+        "weighted_score": 0.8269178867340088,
+        "rerank_score": 9.804391860961914,
+        "text_preview": "# Exporting Tasks TaskFlow Lite supports exporting to CSV and JSON. Some users request PDF export, but it is not officially supported."
+      },
+      {
+        "source": "docs",
+        "source_id": "export.md",
+        "chunk_id": "docs::export.md::0",
+        "weighted_score": 0.39317497014999386,
+        "rerank_score": -0.8353965282440186,
+        "text_preview": "# Exporting Tasks (v2.3) Supported export formats: - CSV - JSON Error: - ERR004: Export failed"
+      },
+      {
+        "source": "docs",
+        "source_id": "getting_started.md",
+        "chunk_id": "docs::getting_started.md::0",
+        "weighted_score": 0.5784554600715637,
+        "rerank_score": -0.860211193561554,
+        "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks per project: 500 - Attachments: up to 25MB"
+      },
+      {
+        "source": "docs",
+        "source_id": "file_attachments.md",
+        "chunk_id": "docs::file_attachments.md::0",
+        "weighted_score": 0.3448044776916504,
+        "rerank_score": -9.48827838897705,
+        "text_preview": "# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large"
+      },
+      {
+        "source": "docs",
+        "source_id": "project_management.md",
+        "chunk_id": "docs::project_management.md::0",
+        "weighted_score": 0.14997169375419617,
+        "rerank_score": -10.178254127502441,
+        "text_preview": "# Projects (v2.3) Each project supports up to 500 tasks. Error: - ERR005: Project task limit reached"
+      }
+    ]
+  },
+  {
+    "query": "What happens if I exceed the task limit in a project?",
+    "answer": "Answer (based on DOCS):\n# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached (500 tasks)\n\nNote on conflicting information:\nI found conflicting numeric values across sources. Policy used: DOCS > BLOGS > FORUMS.",
+    "preferred_source": "docs",
+    "contradictions": {
+      "rate_limit": [
+        {
+          "claim": "300/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::troubleshooting.md::0",
+              "source_id": "troubleshooting.md",
+              "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/ho"
+            },
+            {
+              "source": "forums",
+              "chunk_id": "forums::F003::r1::0",
+              "source_id": "F003",
+              "text_preview": "TITLE: Rate limit question | REPLY by beta (upvotes=9): I believe it's 300/hour now."
+            }
+          ]
+        },
+        {
+          "claim": "300requests/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::getting_started.md::0",
+              "source_id": "getting_started.md",
+              "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks pe"
+            },
+            {
+              "source": "docs",
+              "chunk_id": "docs::api_reference.md::0",
+              "source_id": "api_reference.md",
+              "text_preview": "# API Reference (v2.3) Rate limit: 300 requests/hour per API key. Error: - ERR003: Rate limit exceeded"
+            }
+          ]
+        }
+      ]
+    },
+    "evidence_top5": [
+      {
+        "source": "docs",
+        "source_id": "troubleshooting.md",
+        "chunk_id": "docs::troubleshooting.md::0",
+        "weighted_score": 0.47727860212326045,
+        "rerank_score": -0.3385239243507385,
+        "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached ("
+      },
+      {
+        "source": "docs",
+        "source_id": "project_management.md",
+        "chunk_id": "docs::project_management.md::0",
+        "weighted_score": 0.738760256767273,
+        "rerank_score": -1.2606767416000366,
+        "text_preview": "# Projects (v2.3) Each project supports up to 500 tasks. Error: - ERR005: Project task limit reached"
+      },
+      {
+        "source": "docs",
+        "source_id": "getting_started.md",
+        "chunk_id": "docs::getting_started.md::0",
+        "weighted_score": 0.5450065612792968,
+        "rerank_score": -3.421086311340332,
+        "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks per project: 500 - Attachments: up to 25MB"
+      },
+      {
+        "source": "docs",
+        "source_id": "api_reference.md",
+        "chunk_id": "docs::api_reference.md::0",
+        "weighted_score": 0.2735234320163727,
+        "rerank_score": -6.7386627197265625,
+        "text_preview": "# API Reference (v2.3) Rate limit: 300 requests/hour per API key. Error: - ERR003: Rate limit exceeded"
+      },
+      {
+        "source": "forums",
+        "source_id": "F003",
+        "chunk_id": "forums::F003::r1::0",
+        "weighted_score": 0.1780174970626831,
+        "rerank_score": -9.890138626098633,
+        "text_preview": "TITLE: Rate limit question | REPLY by beta (upvotes=9): I believe it's 300/hour now."
+      }
+    ]
+  },
+  {
+    "query": "How do I fix ERR003 rate limit exceeded?",
+    "answer": "Answer (based on DOCS):\n# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached (500 tasks)\n\nNote on conflicting information:\nI found conflicting numeric values across sources. Policy used: DOCS > BLOGS > FORUMS.",
+    "preferred_source": "docs",
+    "contradictions": {
+      "rate_limit": [
+        {
+          "claim": "200requests/hour",
+          "mentions": [
+            {
+              "source": "blogs",
+              "chunk_id": "blogs::handling_rate_limits.md::0",
+              "source_id": "handling_rate_limits.md",
+              "text_preview": "# Handling Rate Limits Older versions had limits around 200 requests/hour. Newer versions increased reliability and improved limits. If you see ERR003, reduce r"
+            }
+          ]
+        },
+        {
+          "claim": "300/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::troubleshooting.md::0",
+              "source_id": "troubleshooting.md",
+              "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/ho"
+            }
+          ]
+        },
+        {
+          "claim": "300requests/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::api_reference.md::0",
+              "source_id": "api_reference.md",
+              "text_preview": "# API Reference (v2.3) Rate limit: 300 requests/hour per API key. Error: - ERR003: Rate limit exceeded"
+            }
+          ]
+        }
+      ]
+    },
+    "evidence_top5": [
+      {
+        "source": "docs",
+        "source_id": "troubleshooting.md",
+        "chunk_id": "docs::troubleshooting.md::0",
+        "weighted_score": 0.6489360809326171,
+        "rerank_score": 4.48855447769165,
+        "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached ("
+      },
+      {
+        "source": "docs",
+        "source_id": "api_reference.md",
+        "chunk_id": "docs::api_reference.md::0",
+        "weighted_score": 0.7444035530090332,
+        "rerank_score": 3.8639256954193115,
+        "text_preview": "# API Reference (v2.3) Rate limit: 300 requests/hour per API key. Error: - ERR003: Rate limit exceeded"
+      },
+      {
+        "source": "blogs",
+        "source_id": "handling_rate_limits.md",
+        "chunk_id": "blogs::handling_rate_limits.md::0",
+        "weighted_score": 0.6442298889160156,
+        "rerank_score": 1.1859524250030518,
+        "text_preview": "# Handling Rate Limits Older versions had limits around 200 requests/hour. Newer versions increased reliability and improved limits. If you see ERR003, reduce request frequency."
+      },
+      {
+        "source": "docs",
+        "source_id": "project_management.md",
+        "chunk_id": "docs::project_management.md::0",
+        "weighted_score": 0.5204379916191101,
+        "rerank_score": -4.758284568786621,
+        "text_preview": "# Projects (v2.3) Each project supports up to 500 tasks. Error: - ERR005: Project task limit reached"
+      },
+      {
+        "source": "docs",
+        "source_id": "file_attachments.md",
+        "chunk_id": "docs::file_attachments.md::0",
+        "weighted_score": 0.4020776510238647,
+        "rerank_score": -6.129133224487305,
+        "text_preview": "# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large"
+      }
+    ]
+  },
+  {
+    "query": "Can I attach a DOCX file to a task?",
+    "answer": "Answer (based on DOCS):\n# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks per project: 500 - Attachments: up to 25MB each - API rate limit: 300 requests/hour per API key - API keys expire after 60 days\n\nNote on conflicting information:\nI found conflicting numeric values across sources. Policy used: DOCS > BLOGS > FORUMS.",
+    "preferred_source": "docs",
+    "contradictions": {
+      "attachment_mb": [
+        {
+          "claim": "25mb",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::getting_started.md::0",
+              "source_id": "getting_started.md",
+              "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks pe"
+            },
+            {
+              "source": "docs",
+              "chunk_id": "docs::troubleshooting.md::0",
+              "source_id": "troubleshooting.md",
+              "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/ho"
+            },
+            {
+              "source": "docs",
+              "chunk_id": "docs::file_attachments.md::0",
+              "source_id": "file_attachments.md",
+              "text_preview": "# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large"
+            }
+          ]
+        },
+        {
+          "claim": "40mb",
+          "mentions": [
+            {
+              "source": "forums",
+              "chunk_id": "forums::F001::q::0",
+              "source_id": "F001",
+              "text_preview": "TITLE: What is the max attachment size? | QUESTION: I tried uploading a 40MB file and it failed."
+            }
+          ]
+        }
+      ],
+      "rate_limit": [
+        {
+          "claim": "300/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::troubleshooting.md::0",
+              "source_id": "troubleshooting.md",
+              "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/ho"
+            }
+          ]
+        },
+        {
+          "claim": "300requests/hour",
+          "mentions": [
+            {
+              "source": "docs",
+              "chunk_id": "docs::getting_started.md::0",
+              "source_id": "getting_started.md",
+              "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks pe"
+            }
+          ]
+        }
+      ]
+    },
+    "evidence_top5": [
+      {
+        "source": "docs",
+        "source_id": "getting_started.md",
+        "chunk_id": "docs::getting_started.md::0",
+        "weighted_score": 0.3423088788986206,
+        "rerank_score": -8.54590892791748,
+        "text_preview": "# TaskFlow Lite — Getting Started (v2.3) TaskFlow Lite is a lightweight task manager that helps you organize projects and tasks. Official Limits: - Max tasks per project: 500 - Attachments: up to 25MB"
+      },
+      {
+        "source": "forums",
+        "source_id": "F001",
+        "chunk_id": "forums::F001::q::0",
+        "weighted_score": 0.1903925180435181,
+        "rerank_score": -9.002485275268555,
+        "text_preview": "TITLE: What is the max attachment size? | QUESTION: I tried uploading a 40MB file and it failed."
+      },
+      {
+        "source": "docs",
+        "source_id": "troubleshooting.md",
+        "chunk_id": "docs::troubleshooting.md::0",
+        "weighted_score": 0.30138773918151857,
+        "rerank_score": -9.042211532592773,
+        "text_preview": "# Troubleshooting ERR001: Invalid API key (may be expired after 60 days) ERR002: Attachment too large (must be 25MB or less) ERR003: Rate limit exceeded (300/hour) ERR005: Project task limit reached ("
+      },
+      {
+        "source": "docs",
+        "source_id": "file_attachments.md",
+        "chunk_id": "docs::file_attachments.md::0",
+        "weighted_score": 0.21180871725082398,
+        "rerank_score": -9.147008895874023,
+        "text_preview": "# Attachments (v2.3) Supported file types: - PDF - PNG - JPG Size limit: Each attachment must be 25MB or smaller. Error: - ERR002: Attachment too large"
+      },
+      {
+        "source": "blogs",
+        "source_id": "exporting_tasks.md",
+        "chunk_id": "blogs::exporting_tasks.md::0",
+        "weighted_score": 0.44649896025657654,
+        "rerank_score": -9.242637634277344,
+        "text_preview": "# Exporting Tasks TaskFlow Lite supports exporting to CSV and JSON. Some users request PDF export, but it is not officially supported."
+      }
+    ]
+  }
+]
