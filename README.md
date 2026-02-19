@@ -53,7 +53,7 @@ Query → Bi-Encoder Retrieval (FAISS per source)\
     │   ├── build_index.py    # Builds vector indexes
     │   └── rag_final.py      # Full RAG system
     │
-    └── report.pdf            # Final report (optional)
+    └── report.pdf            # Final report 
 
 ------------------------------------------------------------------------
 
