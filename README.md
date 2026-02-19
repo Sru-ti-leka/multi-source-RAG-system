@@ -1,32 +1,32 @@
-# 📌 TaskFlow Lite -- Multi-Source RAG for Technical Support
+#  TaskFlow Lite -- Multi-Source RAG for Technical Support
 
 A Retrieval-Augmented Generation (RAG) system that answers customer
 support questions about a fictional software product (TaskFlow Lite)
 using multiple knowledge sources:
 
--   📘 Official Documentation
--   💬 Customer Forums
--   📝 Technical Blogs
+-    Official Documentation
+-    Customer Forums
+-    Technical Blogs
 
 This project demonstrates multi-source retrieval, reranking,
 contradiction detection, and logging.
 
 ------------------------------------------------------------------------
 
-## 🚀 Features
+##  Features
 
--   ✅ Multi-source semantic retrieval (Docs, Blogs, Forums)
--   ✅ Source-aware chunking strategy
--   ✅ FAISS vector search indexes (3 separate indexes)
--   ✅ Cross-encoder reranking
--   ✅ Numeric contradiction detection (MB, days, rate limits)
--   ✅ Source reliability policy (Docs \> Blogs \> Forums)
--   ✅ Structured logging of each query
--   ✅ Performance analysis (Hit@5, Hit@1)
+-    Multi-source semantic retrieval (Docs, Blogs, Forums)
+-    Source-aware chunking strategy
+-    FAISS vector search indexes (3 separate indexes)
+-    Cross-encoder reranking
+-    Numeric contradiction detection (MB, days, rate limits)
+-    Source reliability policy (Docs \> Blogs \> Forums)
+-    Structured logging of each query
+-    Performance analysis (Hit@5, Hit@1)
 
 ------------------------------------------------------------------------
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 Query → Bi-Encoder Retrieval (FAISS per source)\
 → Source Weighting\
@@ -57,16 +57,16 @@ Query → Bi-Encoder Retrieval (FAISS per source)\
 
 ------------------------------------------------------------------------
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
-### 1️⃣ Create Environment
+###  Create Environment
 
 ``` bash
 python -m venv dl_env
 source dl_env/bin/activate  # or dl_env\Scripts\activate on Windows
 ```
 
-### 2️⃣ Install Dependencies
+###  Install Dependencies
 
 ``` bash
 pip install sentence-transformers faiss-cpu transformers torch numpy
@@ -74,7 +74,7 @@ pip install sentence-transformers faiss-cpu transformers torch numpy
 
 ------------------------------------------------------------------------
 
-## 🏗️ Build Indexes
+##  Build Indexes
 
 Run:
 
@@ -86,7 +86,7 @@ This creates: - docs.faiss - blogs.faiss - forums.faiss
 
 ------------------------------------------------------------------------
 
-## 💬 Run the RAG System
+##  Run the RAG System
 
 ``` bash
 python src/rag_final.py
@@ -103,7 +103,7 @@ Detect contradictions - Apply reliability policy - Log the query
 
 ------------------------------------------------------------------------
 
-## 📊 Performance Evaluation
+##  Performance Evaluation
 
 Metrics included: - Hit@5 - Hit@1
 
@@ -112,7 +112,7 @@ selection ensures reliability.
 
 ------------------------------------------------------------------------
 
-## 🧠 Contradiction Handling
+##  Contradiction Handling
 
 The system detects conflicting numeric values across sources:
 
@@ -125,7 +125,7 @@ Resolution Policy:
 
 ------------------------------------------------------------------------
 
-## 📜 Example Capabilities
+##  Example Capabilities
 
 -   Detects when forums provide outdated information
 -   Prefers official documentation when conflicts occur
@@ -134,7 +134,7 @@ Resolution Policy:
 
 ------------------------------------------------------------------------
 
-## 📌 Why No External LLM?
+##  Why No External LLM?
 
 This implementation is deterministic and retrieval-focused to: - Avoid
 hallucination - Ensure reproducibility - Maintain traceable
@@ -142,19 +142,17 @@ evidence-based answers
 
 ------------------------------------------------------------------------
 
-## 📄 License
+##  License
 
 This project is for academic demonstration purposes.
 
 ------------------------------------------------------------------------
 
-## 👤 Author
+##  Author
 
-Akshay Suresh\
+Srutileka Suresh\
 MS in Applied Machine Learning\
 University of Maryland
 
 ------------------------------------------------------------------------
 
-If you found this project interesting, feel free to fork or build upon
-it!
